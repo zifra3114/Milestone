@@ -1,0 +1,113 @@
+
+body {
+    background-color: rgba(236, 222, 224, 0.918);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.container {
+    border-radius: 20px;
+    margin: 20px auto; 
+    padding: 20px;
+    width: 90%; 
+    max-width: 800px; 
+    border: 2px solid black;
+    background: linear-gradient(to right, rgb(156, 34, 109), rgb(99, 11, 99));
+    box-sizing: border-box; 
+}
+
+
+h1 {
+    font-size: clamp(30px, 6vw, 50px); 
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+}
+
+
+h2 {
+    font-size: clamp(20px, 4vw, 30px); 
+    padding: 2%;
+    color: black;
+    margin: 20px 0 10px;
+    font-style: italic;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: clamp(16px, 3vw, 20px); /* Responsive font size */
+    padding: 10px 20px; /* Add padding for better touch targets */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for better contrast */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: rgb(209, 9, 102);
+    color: white;
+}
+
+
+div {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: clamp(16px, 3vw, 20px); 
+    /* background-color: rgba(255, 255, 255, 0.8); /* Light background for better contrast */
+} 
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    ul li {
+        font-size: 4vw; 
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+
+    div {
+        font-size: 4vw;
+    }
+}

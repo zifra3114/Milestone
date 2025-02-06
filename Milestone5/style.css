@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(219, 230, 227);
+}
+
+form {
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    background-image: url('./image.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+fieldset {
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+}
+
+input, textarea {
+    margin-top: 4px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+}
+
+button {
+    display: block;
+    width: 100%;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+  
+    background-color: deeppink;
+}
+
+#resume, #resume-preview, #link-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(9, 9, 10);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(94, 2, 25, 0.5);
+    background-image: url('./image.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+#resume h2, #resume-preview h2, #resume-preview h3 {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    form, #resume, #resume-preview, #link-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    form, #resume, #resume-preview, #link-container {
+        width: 95%;
+        padding: 15px;
+    }
+    input, textarea {
+        font-size: medium;
+        padding: 8px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    form, #resume, #resume-preview, #link-container {
+        width: 100%;
+        padding: 10px;
+    }
+    input, textarea {
+        font-size: small;
+        padding: 6px;
+    }
+    button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
